@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import _ from 'lodash';
 import './style.css';
 import Icon from './ellipsis-vertical-svgrepo-com.svg';
@@ -18,24 +19,24 @@ writeTask.append(myIcon3);
 
 const todaysToDoList = [
   {
-  description: "Have a walk",
-  completed: false,
-  index: 0,
+    description: 'Have a walk',
+    completed: false,
+    index: 0,
   },
   {
-  description: "Sleep 8 hours",
-  completed: true,
-  index: 1,
+    description: 'Sleep 8 hours',
+    completed: true,
+    index: 1,
   },
 ];
 
 const component = () => {
-  const placeholder = document.querySelector('.placeholder')
+  const placeholder = document.querySelector('.placeholder');
 
   todaysToDoList.forEach((item, index) => {
     if (item.index === index) {
       const element = document.createElement('div');
-      element.classList.add('task')
+      element.classList.add('task');
       placeholder.append(element);
       const checkBox = document.createElement('input');
       checkBox.classList.add('check-box');
@@ -43,13 +44,13 @@ const component = () => {
       element.appendChild(checkBox);
       const taskText = document.createElement('p');
       taskText.innerHTML = item.description;
-      taskText.classList.add('task-text')
+      taskText.classList.add('task-text');
       element.appendChild(taskText);
       const myIcon = new Image();
       myIcon.src = Icon;
       element.appendChild(myIcon);
     }
   });
-}
+};
 
 document.querySelector('.placeholder').appendChild(component());
