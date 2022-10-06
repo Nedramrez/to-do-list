@@ -1,11 +1,23 @@
-.hello {
-  color: red;
-}
-
 body {
-  background-color: bisque;
+  background-color: ghostwhite;
 }
 
-h1 {
-  color: white;
+.to-do-list {
+  width: 250px;
+  background-color: white;
+  margin: 50px;
+}
+
+.tasks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.what-to-do {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recycle-icon {
+  width: 20px;
 }
