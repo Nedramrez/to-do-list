@@ -1,14 +1,15 @@
-# To Do List: Project 1 - List Structure
+# To Do List: Project 2 - Add and Remove Items
 
 ![microverse icon](https://img.shields.io/badge/Microverse-blueviolet)
 
-> This simple web page will be built using webpack and served by a webpack dev server.
+> In this project, I implement the CRUD (create, read, update, delete) methods. All the elements of the user interface are fully functional.
 
 ## Built With
 
 - JavaScript ES6
 - HTML
 - CSS
+- webpack
 
 ## Live Demo
 
